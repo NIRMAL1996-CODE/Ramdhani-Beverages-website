@@ -10,18 +10,17 @@ const Home = () => {
   gsap.to(".drink-right", {scale: 1.1,rotation: -20, y: 40, duration: 2, repeat: -1, yoyo: true, ease: "power1.inOut" });
 });
 
-
   return (
     <section>
 
-      <div  className=" min-h-screen flex flex-col justify-center items-center bg-linear-to-r from-yellow-100 to-yellow-900 text-center px-4  bg-cover bg-center relative ">
+      <div  className=" min-h-screen flex flex-col justify-center items-center bg-linear-to-r from-red-100 to-yellow-600 text-center px-4 relative ">
       
         <div className="side-images">
-        <img src="/images/cookie.png"  className="cookie-left absolute top-20 left-5 w-[150px]" alt="" />
-        <img src="/images/cookie.png"  className="cookie-right absolute  bottom-20 right-5 w-[150px]"alt="" />
+        <img src="/images/cookie.png"  className="cookie-left absolute top-20 left-5 w-[150px]" alt="cookie" />
+        <img src="/images/cookie.png"  className="cookie-right absolute  bottom-20 right-5 w-[150px]"alt="cookie" />
 
-        <img src="/images/drinks.png"  className="drink-left absolute  bottom-20 left-10 w-[150px]" alt="" />
-         <img src="/images/drinks.png"  className="drink-right absolute top-20 right-10 w-[150px]" alt="" />
+        <img src="/images/drinks.png"  className="drink-left absolute  bottom-20 left-10 w-[150px]" alt="drinks" />
+         <img src="/images/drinks.png"  className="drink-right absolute top-20 right-10 w-[150px]" alt="drinks" />
         </div>
 
         {/* Shop Name */}

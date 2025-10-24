@@ -1,4 +1,5 @@
 import Home from "./sections/Home"
+import Mission from "./sections/Missionsection"
 import Navbar from "./sections/Navbar"
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <Navbar/>
       <Home/>
+      <Mission/>
     </div>
   )
 }
