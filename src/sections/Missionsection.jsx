@@ -24,7 +24,7 @@ const Mission = () => {
 
          <img src="/images/light.png"  className=" absolute top-30 right-50 w-[150px]" alt="drinks" />
 
-        <img src="/images/circlethememission.png"  className=" absolute  bottom-5 right-10 w-[250px]"alt="cookie" />
+        {/* <img src="/images/circlethememission.png"  className=" absolute  bottom-5 right-10 w-[250px]"alt="cookie" /> */}
 
         </div>
 
