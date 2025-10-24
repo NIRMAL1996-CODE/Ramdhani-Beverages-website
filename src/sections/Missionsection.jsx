@@ -18,7 +18,7 @@ const Mission = () => {
       {/* <div>
        <img src="/images/vision.png"  className=" absolute   w-[250px]" alt="drinks" />
        </div> */}
-       <div className="side-images">
+       <div className="side-images ">
 
         <img src="/images/light.png"  className=" absolute top-30 left-50 w-[150px]" alt="cookie" />
 
