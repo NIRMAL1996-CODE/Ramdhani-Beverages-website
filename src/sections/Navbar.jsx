@@ -11,11 +11,11 @@ const Navbar = () => {
         </div>
 
         {/* Menu Links */}
-        <div className="grow flex justify-center">
+        <div className=" flex justify-center">
         <ul className="flex space-x-8">
           <li><a href="/home" className=" text-yellow-900  p-2 rounded font-medium hover:text-white">Home</a></li>
 
-          <li><a href="#about" className=" text-yellow-900  p-2 rounded font-medium hover:text-white">About</a></li>
+          <li><a href="/missionsection.jsx" className=" text-yellow-900  p-2 rounded font-medium hover:text-white">About</a></li>
 
           <li><a href="#products" className=" text-yellow-900   p-2 rounded font-medium hover:text-white">Products</a></li>
 

@@ -4,43 +4,44 @@ import gsap from "gsap";
 
 const Mission = () => {
   useGSAP(() => {
-    // Animate text from bottom
-    gsap.from(".mission-text", { y: 50, opacity: 0, duration: 1.5, ease: "power2.out" });
-
-    // Floating drink image
-    gsap.to(".mission-img-right", { y: 20, rotation: -10, duration: 3, repeat: -1, yoyo: true, ease: "power1.inOut" });
+    gsap.from(".mission-line", {
+      y: 40,
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.3,
+      ease: "power2.out",
+    });
   });
 
   return (
-    <section
-      className="min-h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden  bg-[url('/images/missiontextbg.png')] bg-contain bg-center bg-no-repeat  "
-    >
-      {/* <div>
-       <img src="/images/vision.png"  className=" absolute   w-[250px]" alt="drinks" />
-       </div> */}
-       <div className="side-images ">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-[url('/images/footerbg.jpg')] bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 bg-black/10"></div>
 
-        <img src="/images/light.png"  className=" absolute top-30 left-50 w-[150px]" alt="cookie" />
+      <div className="mission-text relative z-10 p-10 rounded-3xl bg-white/10 backdrop-blur-3xl shadow-[0_0_50px_rgba(255,255,255,0.3)] max-w-4xl">
+        <h2 className="text-5xl font-bold text-white mb-8 tracking-wide drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
+          Our Mission
+        </h2>
 
-         <img src="/images/light.png"  className=" absolute top-30 right-50 w-[150px]" alt="drinks" />
-
-        {/* <img src="/images/circlethememission.png"  className=" absolute  bottom-5 right-10 w-[250px]"alt="cookie" /> */}
-
+        <div className="space-y-5">
+          <p className="mission-line text-xl text-white/90">
+            To deliver <span className="text-yellow-300 font-semibold">premium-quality</span> beverages and snacks that bring freshness and joy to every customer.
+          </p>
+          <p className="mission-line text-xl text-white/90">
+            To ensure <span className="text-amber-300 font-semibold">service excellence</span> where every customer feels valued and satisfied.
+          </p>
+          <p className="mission-line text-xl text-white/90">
+            To build <span className="text-pink-300 font-semibold">strong, lasting relationships</span> based on trust and consistency.
+          </p>
+          <p className="mission-line text-xl text-white/90">
+            To be the <span className="text-green-300 font-semibold">solution provider</span> for all beverage and snack needs.
+          </p>
+          <p className="mission-line text-xl text-white/90">
+            To expand our reach with a clear <span className="text-blue-300 font-semibold">vision</span> — serving quality across every corner.
+          </p>
+          <p className="mission-line text-xl text-white/90">
+            To uphold our <span className="text-purple-300 font-semibold">goodwill</span> through honesty, dedication, and continuous improvement.
+          </p>
         </div>
-
-      {/* Mission Text */}
-      <div className="mission-text p-10 rounded-xl w-150 h-110 shadow-[0_0_40px_rgba(255,255,255,0.3)] text-shadow 
-      ">
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Our Mission</h2>
-        <p className="text-lg lg:text-xl text-white mb-4">
-          Deliver fresh, tasty drinks and snacks to brighten every moment.
-        </p>
-        <p className="text-lg lg:text-xl text-white mb-4">
-          Ensure quality, convenience, and happiness in every product.
-        </p>
-        <p className="text-lg lg:text-xl text-white">
-          Build a community that enjoys and trusts Ramdhani Beverages.
-        </p>
       </div>
     </section>
   );
