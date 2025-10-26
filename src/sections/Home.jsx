@@ -19,16 +19,16 @@ const Home = () => {
   return (
     <section>
 
-      <div  className=" min-h-screen flex flex-col justify-center items-center bg-linear-to-r from-red-100 to-yellow-600 text-center px-4 relative ">
+      <div className=" min-h-screen w-full flex flex-col justify-center items-center bg-linear-to-r from-red-100 to-yellow-600 text-center relative ">
       
         <div className="side-images">
-          <img src="/images/cookie.png" className="cookie-left absolute top-30 md:top-20 left-2 md:left-5 w-24 md:w-[150px]" alt="cookie" />
+          <img src="/images/cookie.png" className="cookie-left absolute top-32 md:top-20 left-2 md:left-5 w-24 md:w-[150px]" alt="cookie" />
 
-          <img src="/images/cookie.png" className="cookie-right absolute bottom-30 md:bottom-20 right-2 md:right-5 w-24 md:w-[150px]" alt="cookie" />
+          <img src="/images/cookie.png" className="cookie-right absolute bottom-32 md:bottom-20 right-2 md:right-5 w-24 md:w-[150px]" alt="cookie" />
 
-          <img src="/images/drinks.png" className="drink-left absolute bottom-30 md:bottom-10 left-2 md:left-10 w-24 md:w-[150px]" alt="drinks" />
+          <img src="/images/drinks.png" className="drink-left absolute bottom-32 md:bottom-10 left-2 md:left-10 w-24 md:w-[150px]" alt="drinks" />
 
-          <img src="/images/drinks.png" className="drink-right absolute top-30 md:top-10 right-2 md:right-10 w-24 md:w-[150px]" alt="drinks" />
+          <img src="/images/drinks.png" className="drink-right absolute top-32 md:top-10 right-2 md:right-10 w-24 md:w-[150px]" alt="drinks" />
        </div>
 
         {/* Shop Name */}
