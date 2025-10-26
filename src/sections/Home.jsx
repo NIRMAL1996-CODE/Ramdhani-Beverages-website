@@ -3,11 +3,17 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Home = () => {
   useGSAP(() => {
-  gsap.to(".cookie-left", {x:550, rotation: 60,y: -50, duration: 6, repeat: -1, yoyo: true, ease: "power1.inOut" });
-  gsap.to(".cookie-right", {x:-550,rotation: 60, y: 50, duration: 6, repeat: -1, yoyo: true, ease: "power1.inOut" });
+      const isMobile = window.innerWidth < 768;
 
-  gsap.to(".drink-left", {scale: 1.1,rotation: 20 , y: -40, duration: 2, repeat: -1, yoyo: true, ease: "power1.inOut" });
-  gsap.to(".drink-right", {scale: 1.1,rotation: -20, y: 40, duration: 2, repeat: -1, yoyo: true, ease: "power1.inOut" });
+  gsap.to(".cookie-left", {x: isMobile ? 100 : 550, y: isMobile ? -20 : -50, rotation: 60, duration: 6, repeat: -1, yoyo: true, ease: "power1.inOut" });
+
+  gsap.to(".cookie-right", {  x: isMobile ? -100 : -550,
+    y: isMobile ? 20 : 50,rotation: 60, duration: 6, repeat: -1, yoyo: true, ease: "power1.inOut" });
+
+  gsap.to(".drink-left", { x: 0,
+    y: isMobile ? -10 : -40 ,scale: 1.1,rotation: 20 , duration: 2, repeat: -1, yoyo: true, ease: "power1.inOut" });
+
+  gsap.to(".drink-right", { x: 0,y: isMobile ? 10 : 40, scale: 1.1,rotation: -20, duration: 2, repeat: -1, yoyo: true, ease: "power1.inOut" });
 });
 
   return (
@@ -17,9 +23,12 @@ const Home = () => {
       
         <div className="side-images">
           <img src="/images/cookie.png" className="cookie-left absolute top-10 md:top-20 left-2 md:left-5 w-24 md:w-[150px]" alt="cookie" />
+
           <img src="/images/cookie.png" className="cookie-right absolute bottom-10 md:bottom-20 right-2 md:right-5 w-24 md:w-[150px]" alt="cookie" />
-          <img src="/images/drinks.png" className="drink-left absolute bottom-10 md:bottom-20 left-2 md:left-10 w-24 md:w-[150px]" alt="drinks" />
-          <img src="/images/drinks.png" className="drink-right absolute top-10 md:top-20 right-2 md:right-10 w-24 md:w-[150px]" alt="drinks" />
+
+          <img src="/images/drinks.png" className="drink-left absolute bottom-10 md:bottom-10 left-2 md:left-10 w-24 md:w-[150px]" alt="drinks" />
+
+          <img src="/images/drinks.png" className="drink-right absolute top-10 md:top-10 right-2 md:right-10 w-24 md:w-[150px]" alt="drinks" />
        </div>
 
         {/* Shop Name */}
