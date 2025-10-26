@@ -22,19 +22,13 @@ const Home = () => {
       <div className="overflow-x-hidden min-h-screen w-full flex flex-col justify-center items-center bg-linear-to-r from-red-100 to-yellow-600 text-center relative ">
       
         <div className="side-images">
-          {/* <img src="/images/cookie.png" className="cookie-left absolute top-32 md:top-20 left-2 md:left-5 w-24 md:w-[150px]" alt="cookie" />
+          <img src="/images/cookie.png" className="cookie-left absolute top-32 md:top-20 left-2 md:left-5 w-24 md:w-[150px]" alt="cookie" />
 
           <img src="/images/cookie.png" className="cookie-right absolute bottom-32 md:bottom-20 right-2 md:right-5 w-24 md:w-[150px]" alt="cookie" />
 
           <img src="/images/drinks.png" className="drink-left absolute bottom-32 md:bottom-10 left-2 md:left-10 w-24 md:w-[150px]" alt="drinks" />
 
-          <img src="/images/drinks.png" className="drink-right absolute top-32 md:top-10 right-2 md:right-10 w-24 md:w-[150px]" alt="drinks" /> */}
-
-          <img className="cookie-left absolute top-2 md:top-6 left-1 md:left-5 w-16 md:w-[150px]" />
-          <img className="cookie-right absolute top-2 md:top-6 right-1 md:right-5 w-16 md:w-[150px]" />
-          <img className="drink-left absolute bottom-2 md:bottom-6 left-1 md:left-10 w-16 md:w-[150px]" />
-          <img className="drink-right absolute bottom-2 md:bottom-6 right-1 md:right-10 w-16 md:w-[150px]" />
-
+          <img src="/images/drinks.png" className="drink-right absolute top-32 md:top-10 right-2 md:right-10 w-24 md:w-[150px]" alt="drinks" />
        </div>
 
         {/* Shop Name */}
