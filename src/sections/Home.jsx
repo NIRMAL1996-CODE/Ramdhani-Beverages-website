@@ -1,7 +1,22 @@
 // Home.jsx
+import React, { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Home = () => {
+
+  const cursorRef = useRef(null);
+
+  useEffect(() => {
+  const moveCursor = (e) => {
+    if (cursorRef.current) {
+      cursorRef.current.style.transform =`translate3d(${e.clientX - 4}px, ${e.clientY - 5}px, 0)`; }
+  };
+
+  window.addEventListener("mousemove", moveCursor);
+  return () => window.removeEventListener("mousemove", moveCursor);
+}, []);
+
+
   useGSAP(() => {
       const isMobile = window.innerWidth < 768;
 
@@ -14,10 +29,14 @@ const Home = () => {
     y: isMobile ? -10 : -40 ,scale: 1.1,rotation: 20 , duration: 2, repeat: -1, yoyo: true, ease: "power1.inOut" });
 
   gsap.to(".drink-right", { x: 0,y: isMobile ? 10 : 40, scale: 1.1,rotation: -20, duration: 2, repeat: -1, yoyo: true, ease: "power1.inOut" });
+
 });
 
   return (
     <section>
+      <div ref={cursorRef} className="custom-cursor fixed top-0 left-0 w-8 h-10 pointer-events-none z-50">
+         <img src="/images/cursor.png" className="w-full h-full pointer-events-none:" alt="cursor" />
+      </div>
 
       <div className="overflow-x-hidden min-h-screen w-full flex flex-col justify-center items-center bg-linear-to-r from-red-100 to-yellow-600 text-center relative ">
       
