@@ -19,3 +19,9 @@ body {
 .animate-bounce {
   animation: bounce 0.6s ease-in-out;
 }
+
+.card {
+  border: transparent;
+  border-image: url('cardbg.png');
+}
+
