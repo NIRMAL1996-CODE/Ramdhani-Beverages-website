@@ -33,6 +33,21 @@ const Footer = () => {
           </p>
         </div>
       </div>
+       
+       {/* Google Map */}
+       <div className="max-w-6xl mx-auto px-6 mt-8 h-[180px] md:h-[220px]">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15037.760175264893!2d77.837398!3d19.5656396!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd18b8e86cb1b6d%3A0x69a2822cb1bc2f9f!2sRamdhani%20Agencies!5e0!3m2!1sen!2sin!4v1761591915262!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+
 
       <div className="border-t border-yellow-900 mt-8 pt-4">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-[#ffe9b8]/80">
