@@ -1,7 +1,6 @@
-// Product.jsx
-import React from "react";
 
 const Productsection = () => {
+
   const products = [
     { name: "Lays Chips", img: "/images/alllays.png" },
     { name: "Soft Drinks", img: "/images/alldrinks.png" },
@@ -18,16 +17,16 @@ const Productsection = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-linear-to-r from-yellow-200 via-red-100 to-yellow-500 py-20 px-5 text-center">
+    <section id="products" className="min-h-screen bg-linear-to-r from-yellow-300 via-red-100 to-yellow-700 py-20 px-5 text-center">
       <h2 className="text-4xl font-bold text-yellow-900 mb-10">
-        Our Products
+        Explore Items
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 max-w-6xl mx-auto">
         {products.map((item, index) => (
           <div
             key={index}
-            className="bg-white/20 backdrop-blur-md p-6 rounded-3xl shadow-lg hover:scale-105 transition-all duration-300"
+            className="product-card bg-white/20 backdrop-blur-md p-6 rounded-3xl shadow-lg hover:scale-105 transition-all duration-300"
           >
             <img
               src={item.img}

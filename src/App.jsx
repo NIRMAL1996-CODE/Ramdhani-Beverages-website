@@ -1,5 +1,7 @@
 
+
 import Featuresection from "./sections/Featuresection"
+import Footer from "./sections/Footer"
 import Home from "./sections/Home"
 import Mission from "./sections/Missionsection"
 import Navbar from "./sections/Navbar"
@@ -11,8 +13,9 @@ const App = () => {
       <Navbar/>
       <Home/>
       <Mission/>
-      <Featuresection/>
       <Productsection/>
+      <Featuresection/>
+      <Footer/>
     </div>
   )
 }
