@@ -3,6 +3,7 @@ import Featuresection from "./sections/Featuresection"
 import Home from "./sections/Home"
 import Mission from "./sections/Missionsection"
 import Navbar from "./sections/Navbar"
+import Productsection from "./sections/Productsection"
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Home/>
       <Mission/>
       <Featuresection/>
+      <Productsection/>
     </div>
   )
 }

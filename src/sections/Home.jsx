@@ -38,7 +38,7 @@ const Home = () => {
          <img src="/images/cursor.png" className="w-full h-full pointer-events-none:" alt="cursor" />
       </div>
 
-      <div className="overflow-x-hidden min-h-screen w-full flex flex-col justify-center items-center bg-linear-to-r from-yellow-300 via-red-300 to-yellow-700 text-center relative ">
+      <div className="overflow-x-hidden min-h-screen w-full flex flex-col justify-center items-center bg-linear-to-r from-yellow-300 via-red-100 to-yellow-700 text-center relative ">
       
         <div className="side-images">
           <img src="/images/cookie.png" className="cookie-left absolute top-32 md:top-20 left-2 md:left-5 w-24 md:w-[150px]" alt="cookie" />

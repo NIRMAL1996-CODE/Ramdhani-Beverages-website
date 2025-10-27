@@ -28,7 +28,7 @@ const features = [
 const Featuresection = () => {
   return (
     <section className="overflow-hidden" >
-    <div className="py-34 bg-linear-to-r from-yellow-300 via-red-300 to-yellow-700
+    <div className="py-34 bg-linear-to-r from-yellow-300 via-red-100 to-yellow-700
  text-center min-h-screen">
    
       <h2 className="text-3xl font-bold mb-10 ">Why Choose Ramdhani Beverages</h2>
@@ -36,9 +36,9 @@ const Featuresection = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="card bg-[url('/images/card111.png')] bg-white/40 backdrop-blur-lg bg-cover bg-center bg-no-repeat p-6 rounded-xl shadow-md hover:shadow-xl transition h-[250px]"
+            className="card bg-[url('/images/yellowborder.png')] bg-white/40  bg-cover bg-center bg-no-repeat p-6 rounded-xl shadow-md hover:shadow-xl transition h-[250px]"
           >
-            <div className="text-4xl mb-4 mt-8">{feature.icon}</div>
+            <div className="text-4xl mb-4 mt-4">{feature.icon}</div>
             <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
             <p className="text-gray-600">{feature.desc}</p>
           </div>
