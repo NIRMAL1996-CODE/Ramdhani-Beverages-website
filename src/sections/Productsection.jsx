@@ -17,8 +17,8 @@ const Productsection = () => {
   ];
 
   return (
-    <section id="products" className="min-h-screen bg-linear-to-r from-yellow-300 via-red-100 to-yellow-700 py-20 px-5 text-center">
-      <h2 className="text-4xl font-bold text-yellow-900 mb-10">
+    <section id="products" className="min-h-screen bg-linear-to-r from-[#fdf6e3] via-[#f7e1a0] to-[#b8860b] py-20 px-5 text-center">
+      <h2 className="text-4xl font-bold text-[#4a2c00]  mb-10">
         Explore Items
       </h2>
 
@@ -26,17 +26,18 @@ const Productsection = () => {
         {products.map((item, index) => (
           <div
             key={index}
-            className="product-card bg-white/20 backdrop-blur-md p-6 rounded-3xl shadow-lg hover:scale-105 transition-all duration-300"
+            className="product-card bg-white/10 backdrop-blur-lg p-6 rounded-3xl shadow-[0_0_25px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_#b8860b]
+             hover:scale-105 transition-all duration-300"
           >
             <img
               src={item.img}
               alt={item.name}
               className="w-full h-48 object-contain mb-4 rounded-2xl"
             />
-            <h3 className="text-xl font-semibold text-yellow-900 mb-2">
+            <h3 className="text-xl font-semibold text-[#4a2c00] mb-2">
               {item.name}
             </h3>
-            <p className="text-yellow-800 font-medium">{item.price}</p>
+            <p className="text-[#8b6b1f] font-medium">{item.price}</p>
           </div>
         ))}
       </div>

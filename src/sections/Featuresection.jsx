@@ -17,19 +17,20 @@ const features = [
 const Featuresection = () => {
   return (
     <section id="features" className="overflow-hidden" >
-    <div className="py-34 bg-linear-to-r from-yellow-300 via-red-100 to-yellow-700
- text-center min-h-screen">
+    <div className="py-34 bg-linear-to-r from-[#fdf6e3] via-[#f7e1a0] to-[#b8860b] text-center min-h-screen">
    
-      <h2 className="text-4xl font-bold text-yellow-900 mb-10 ">Why Choose Ramdhani Beverages</h2>
+      <h2 className="text-4xl font-bold text-[#4a2c00] mb-10 ">
+        Why Choose Ramdhani Beverages
+      </h2>
+
       <div className="max-w-6xl mt-10 mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {features.map((feature, index) => (
-          <div
-            key={index}
+          <div key={index}
             className="mt-10 p-6 rounded-xl shadow-lg hover:shadow-xl transition h-[250px]"
           >
             <div className="text-4xl mb-4">{feature.icon}</div>
-            <h3 className="text-xl text-yellow-900 font-semibold mb-2">{feature.title}</h3>
-            <p className="text-gray-600">{feature.desc}</p>
+            <h3 className="text-xl text-[#4a2c00] font-semibold mb-2">{feature.title}</h3>
+            <p className="text-[#7c6f52]">{feature.desc}</p>
           </div>
         ))}
       </div>
